@@ -1,15 +1,15 @@
 const getDivisi = [
   {
     name: "Desain Grafis",
-    img: "/divisi/programming.jpg",
+    img: "/divisi/template.png",
   },
   {
     name: "Programming",
-    img: "/divisi/programming.jpg",
+    img: "/divisi/template.png",
   },
   {
     name: "Comp & Network",
-    img: "/divisi/programming.jpg",
+    img: "/divisi/template.png",
   },
 ];
 

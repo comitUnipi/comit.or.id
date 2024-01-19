@@ -2,16 +2,19 @@ import MentorCard from "./MentorCard";
 
 const Mentor = () => {
   return (
-    <section className="text-center mt-20 mx-20">
-      <h3 className="text-4xl font-bold">
-        Mentor di <span className="text-primary">Comit</span>
-      </h3>
-      <p className="text-gray-600 leading-4 mt-3">
-        Pelatihan di comit dilatih oleh para <br />
-        mentor yang sudah ahli dibidangnya
-      </p>
-      <MentorCard />
-    </section>
+    <>
+      <div className="text-center mt-20 mx-20">
+        <h3 className="text-4xl lg:text-[48px] font-bold">
+          Mentor di <span className="text-primary">Comit</span>
+        </h3>
+        <p className="opacity-80 text-md lg:text-[20px] mt-3">
+          Pelatihan di comit dilatih oleh para <br />
+          mentor yang sudah ahli dibidangnya.
+        </p>
+        <MentorCard />
+      </div>
+      <div className="bg-primary h-[15px] md:h-[20px] mb-5 mt-5" />
+    </>
   );
 };
 
