@@ -6,7 +6,7 @@ import TentangKami from "@/components/beranda/TentangKami";
 const Home = () => {
   return (
     <>
-      <section className="mt-24">
+      <section>
         <Pendahuluan />
         <TentangKami />
       </section>
