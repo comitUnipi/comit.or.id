@@ -3,7 +3,7 @@ import MentorCard from "./MentorCard";
 const Mentor = () => {
   return (
     <>
-      <div className="text-center mt-20 mx-20">
+      <div className="text-center mt-20 lg:mx-20">
         <h3 className="text-4xl lg:text-[48px] font-bold">
           Mentor di <span className="text-primary">Comit</span>
         </h3>

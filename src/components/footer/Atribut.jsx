@@ -6,7 +6,7 @@ import { SosmedList } from "@/helper/navigation/sosmedList";
 const Atribut = () => {
   return (
     <>
-      <div className="flex gap-6">
+      <div className="flex gap-6 mt-3 md:mt-0">
         <div className="text-white">
           <h1 className="opacity-80">Organisasi</h1>
           {NavbarList.map((item, index) => (

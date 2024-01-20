@@ -15,6 +15,8 @@ const Home = () => {
       <section>
         <Divisi />
         <Mentor />
+      </section>
+      <section>
         <PhotoCarousel />
         <ArticleExcerpt />
       </section>

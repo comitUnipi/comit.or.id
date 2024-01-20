@@ -1,12 +1,15 @@
+import Link from "next/link"
 import Excerpt from "./Excerpt";
 import articleExcerpt from "@/helper/articleExcerpt/articleExcerpt";
 
 const ArticleExcerpt = () => {
   return (
-    <div className="w-[75%] mx-auto mt-[7rem]">
+    <div className="w-[75%] mx-auto mt-2">
       <div className="md:flex md:justify-between text-center">
         <h1 className="font-semibold md:text-[48px] text-4xl">Artikel Kami</h1>
-        <p className="self-end underline md:text-[16px] text-sm ">Selengkapnya</p>
+        <p className=" hidden md:block self-end underline md:text-[16px] text-sm">
+          Selengkapnya
+        </p>
       </div>
       <div>
         {articleExcerpt.map((value, index) => {
@@ -33,6 +36,11 @@ const ArticleExcerpt = () => {
           );
         })}
       </div>
+      <p className="mt-6 block md:hidden underline text-center pr-4 text-sm">
+        <Link href="/artikel">
+        Selengkapnya
+        </Link>
+        </p>
     </div>
   );
 };

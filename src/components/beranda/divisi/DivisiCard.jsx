@@ -33,7 +33,7 @@ const DivisiCard = () => {
                 className="pl-1 md:basis-1/2 lg:basis-1/3"
               >
                 <div className="p-1 flex justify-center gap-10">
-                  <Card className="rounded-t-sm">
+                  <Card className="w-[300px] h-auto rounded-t-sm">
                     <Image
                       src={item.img}
                       alt="image"
@@ -52,8 +52,6 @@ const DivisiCard = () => {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="block lg:hidden" />
-        <CarouselNext className="block lg:hidden" />
       </Carousel>
     </div>
   );

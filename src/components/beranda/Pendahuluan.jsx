@@ -11,7 +11,7 @@ const Pendahuluan = () => {
           <Image className="md:w-[400px] lg:w-full" src="/images/comit.png" alt="logo" height={563} width={528} />
         </div>
         <div className="lg:w-[500px] lg:h-[370px] lg:-mt-28">
-          <h1 className="text-[50px] lg:text-[64px] font-extrabold">
+          <h1 className="text-[40px] md:text-[50px] lg:text-[64px] font-extrabold">
             Community
             <br />
             <span className="text-primary">Of Information</span>
