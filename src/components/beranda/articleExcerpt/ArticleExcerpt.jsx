@@ -4,7 +4,7 @@ import articleExcerpt from "@/helper/articleExcerpt/articleExcerpt";
 
 const ArticleExcerpt = () => {
   return (
-    <div className="w-[75%] mx-auto mt-2">
+    <div className="items-center lg:mx-[10em] mt-2 mx-5">
       <div className="md:flex md:justify-between text-center">
         <h1 className="font-semibold md:text-[48px] text-4xl">Artikel Kami</h1>
         <p className=" hidden md:block self-end underline md:text-[16px] text-sm">
@@ -21,7 +21,6 @@ const ArticleExcerpt = () => {
               tag={value.tag}
               excerpt={value.excerpt}
               featuredImage={value.featured_image}
-              flexDecoration="md:flex-row"
             />
           ) : (
             <Excerpt
@@ -31,7 +30,7 @@ const ArticleExcerpt = () => {
               tag={value.tag}
               excerpt={value.excerpt}
               featuredImage={value.featured_image}
-              flexDecoration="md:flex-row-reverse"
+              rowStart="lg:row-start-1"
             />
           );
         })}
