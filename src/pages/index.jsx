@@ -1,20 +1,20 @@
-import Divisi from "@/components/beranda/divisi/Divisi";
-import Mentor from "@/components/beranda/mentor/Mentor";
-import Pendahuluan from "@/components/beranda/Pendahuluan";
-import TentangKami from "@/components/beranda/TentangKami";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <>
-      <section className="mt-24">
-        <Pendahuluan />
-        <TentangKami />
-      </section>
-      <section>
-        <Divisi />
-        <Mentor />
-      </section>
-    </>
+    <div className="h-screen flex justify-center items-center">
+      <div>
+        <h1 className="text-4xl font-extrabold py-5 text-center">
+          CEK REPOSITORY HERE
+        </h1>
+        <div className="flex justify-center">
+          <Button>
+            <Link href="https://github.com/comitUnipi">Click Here</Link>
+          </Button>
+        </div>
+      </div>
+    </div>
   );
 };
 
