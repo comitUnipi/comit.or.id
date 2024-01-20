@@ -33,7 +33,7 @@ const MentorCard = () => {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-        <CarouselContent className="-ml-1">
+        <CarouselContent>
           {mentor.map((item, index) => (
             <CarouselItem
               key={index}
