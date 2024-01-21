@@ -8,15 +8,15 @@ const Excerpt = ({
   tag,
   excerpt,
   featuredImage,
-  flexDecoration,
+  rowStart,
 }) => {
   return (
-    <div>
+    <>
       <div
         key={key}
-        className={`md:flex md:gap-[10rem] md:my-[5rem] ${flexDecoration} md:border-none flex flex-col-reverse mt-[3rem]`}
+        className={`mt-10 grid grid-cols-12 gap-5`}
       >
-        <div>
+        <div className="order-2 col-span-12 lg:col-span-9 lg:order-1">
           <h3 className="text-[#646464] text-[12px] font-medium">
             {createdAt}
           </h3>
@@ -32,11 +32,11 @@ const Excerpt = ({
             })}
           </div>
         </div>
-        <div className="mb-3">
-          <Image src={featuredImage} alt="" width={850} height={850} />
+        <div className={`order-1 col-span-12 py-2 lg:col-span-3 lg:order-2 ${rowStart}`}>
+          <Image src={featuredImage} alt="" width={400} height={400}/>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
