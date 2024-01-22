@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { KontenList } from "@/helper/artikel/kontenList";
+import Tag from "@/lib/Tag/Tag";
 
 const KontenArtikel = () => {
   return (
@@ -19,12 +20,7 @@ const KontenArtikel = () => {
             <div className="flex gap-6 items-center">
               {item.topik &&
                 item.topik.map((item, index) => (
-                  <span
-                    className="bg-primary bg-opacity-50 py-1 px-4 rounded-md mt-6"
-                    key={index}
-                  >
-                    <p className="text-white text-sm">{item.opsi}</p>
-                  </span>
+                  <Tag key={index} item={item} />
                 ))}
             </div>
           </div>
