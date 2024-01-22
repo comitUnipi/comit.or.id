@@ -5,7 +5,7 @@ export const NavbarList = [
   },
   {
     label: "Tentang",
-    href: "/Tentang",
+    href: "/about",
   },
   {
     label: "Galeri",
