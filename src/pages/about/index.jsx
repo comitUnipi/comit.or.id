@@ -11,7 +11,7 @@ const About = () => {
             className="bg-primary text-white lg:p-[7rem] text-center p-5"
           >
             <h1 className="uppercase text-4xl font-bold">{item.judul}</h1>
-            <p className="lg:mx-[7rem] mt-6 text-xl text-left">{item.desc}</p>
+            <p className="lg:mx-[7rem] mt-6 text-justify text-sm md:text-xl md:text-left">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -35,7 +35,7 @@ const About = () => {
         ))}
       </div>
       <div>
-        <Image src="/images/strukturOrganisasi.png" alt="" width={900} height={900} className="mx-auto"/>
+        <Image src="/images/StrukturOrganisasi.png" alt="" width={900} height={900} className="mx-auto"/>
       </div>
     </div>
   );

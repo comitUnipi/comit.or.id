@@ -30,9 +30,9 @@ const Pendahuluan = () => {
           </div>
           <div className="flex gap-4 mt-3">
             <Button>
-              <Link href="/">Selengkapnya</Link>
+              <Link href="/about">Selengkapnya</Link>
             </Button>
-            <Button variant="outline">
+            <Button onClick={()=> alert("COMING SOON")} variant="outline">
               <Link href="/">Daftar Sekarang</Link>
             </Button>
           </div>

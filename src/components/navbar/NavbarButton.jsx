@@ -6,10 +6,10 @@ const NavbarButton = () => {
     <>
       <div className="hidden md:flex">
         <div className="flex items-center gap-4">
-          <Button className="px-6" size="sm">
+          <Button onClick={()=> alert("COMING SOON")} className="px-6" size="sm">
             Masuk
           </Button>
-          <Button className="px-6" size="sm" variant="outline">
+          <Button onClick={()=> alert("COMING SOON")} className="px-6" size="sm" variant="outline">
             Daftar
           </Button>
         </div>
