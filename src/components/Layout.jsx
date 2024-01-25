@@ -1,14 +1,19 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
+import { useRouter } from "next/router";
+
+const disable = ["/auth/login", "/auth/register"];
 
 const Layout = (props) => {
   const { children } = props;
+  const { pathname } = useRouter();
+
   return (
     <>
-      <Navbar />
+      {!disable.includes(pathname) && <Navbar />}
       <div className="my-24">{children}</div>
-      <Footer />
+      {!disable.includes(pathname) && <Footer />}
     </>
   );
 };

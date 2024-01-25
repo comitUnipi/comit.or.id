@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link"
 import { Button } from "../ui/button";
+import { useRouter } from "next/router";
 
 const TentangKami = () => {
+  const router = useRouter()
   return (
     <>
       <div className="bg-primary h-[15px] md:h-[20px] mt-5" />
@@ -19,9 +21,7 @@ const TentangKami = () => {
             Marilah Belajar Berorganisasi <br /> dan Berbagi Ilmu Teknologi
             <br /> Bersama Kami.
           </p>
-          <Button size="sm">
-            <Link href="/about">Selengkapnya</Link>
-          </Button>
+            <Button onClick={() => router.push("/about")} size="sm">Selengkapnya</Button>
         </div>
         <div className="col-span-3 lg:col-span-2 -mt-10">
           <Image src="/images/sayHello.png" alt="" width={300} height={200} />
