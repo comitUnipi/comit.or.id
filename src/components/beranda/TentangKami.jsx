@@ -23,8 +23,8 @@ const TentangKami = () => {
           </p>
             <Button onClick={() => router.push("/about")} size="sm">Selengkapnya</Button>
         </div>
-        <div className="col-span-3 lg:col-span-2 -mt-10">
-          <Image src="/images/sayHello.png" alt="" width={300} height={200} />
+        <div className="col-span-3 lg:col-span-2 ml-7">
+          <Image src="/images/sayHello.png" alt="" width={200} height={100} />
         </div>
       </div>
       <div className="bg-primary h-[15px] md:h-[20px] mb-5" />

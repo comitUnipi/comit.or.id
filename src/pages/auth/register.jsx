@@ -1,9 +1,10 @@
 import React from 'react'
+import FormRegister from '@/components/formAuth/formRegister'
 
 const register = () => {
   return (
     <>
-      {/*BIKIN DISINI KUL  */}
+      <FormRegister />
     </>
   )
 }
