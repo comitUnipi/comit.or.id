@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link"
 import { Button } from "../ui/button";
 import { useRouter } from "next/router";
 
@@ -13,7 +14,9 @@ const TentangKami = () => {
           <Image src="/images/logoComit.png" alt="" width={300} height={200} />
         </div>
         <div className="text-center col-span-6 lg:col-span-8">
-          <h1 className="text-2xl lg:text-[48px] lg:mb-2 font-semibold">Tentang Kami</h1>
+          <h1 className="text-2xl lg:text-[48px] lg:mb-2 font-semibold">
+            Tentang Kami
+          </h1>
           <p className="opacity-80 leading-normal text-sm lg:text-[20px] py-2">
             Marilah Belajar Berorganisasi <br /> dan Berbagi Ilmu Teknologi
             <br /> Bersama Kami.
@@ -21,12 +24,7 @@ const TentangKami = () => {
             <Button onClick={() => router.push("/about")} size="sm">Selengkapnya</Button>
         </div>
         <div className="col-span-3 lg:col-span-2 -mt-10">
-          <Image
-            src="/images/sayHello.png"
-            alt=""
-            width={300}
-            height={200}
-          />
+          <Image src="/images/sayHello.png" alt="" width={300} height={200} />
         </div>
       </div>
       <div className="bg-primary h-[15px] md:h-[20px] mb-5" />
