@@ -1,11 +1,7 @@
-import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "../ui/button";
-import { useRouter } from "next/navigation";
+import ButtonReusable from "@/lib/button/Button";
 
 const Pendahuluan = () => {
-  const router = useRouter()
   return (
     <>
       <div className="mx-5 md:flex justify-center items-center gap-10">
@@ -31,12 +27,8 @@ const Pendahuluan = () => {
             </p>
           </div>
           <div className="flex gap-4 mt-3">
-            <Button onClick={() => router.push("/about")}>
-              Selengkapnya
-            </Button>
-            <Button onClick={()=> router.push("/auth/register")} variant="outline">
-              Daftar Sekarang
-            </Button>
+            <ButtonReusable path="/about" title="Selengkapnya"/>
+            <ButtonReusable path="/auth/register" title="Selengkapnya" variant="outline"/>
           </div>
         </div>
       </div>

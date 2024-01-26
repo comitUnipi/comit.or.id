@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div>
+    <div className="my-24">
       <div>
         {aboutMe.map((item) => (
           <div

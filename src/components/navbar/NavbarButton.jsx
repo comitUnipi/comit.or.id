@@ -1,29 +1,22 @@
-import React from "react";
-import { Button } from "../ui/button";
-import { useRouter } from "next/navigation";
+import ButtonReusable from "@/lib/button/Button";
 
 const NavbarButton = () => {
-  const router = useRouter();
   return (
     <>
-      <div className="hidden md:flex">
-        <div className="flex items-center gap-4">
-          <Button
-            onClick={() => router.push("/auth/login")}
-            className="px-6"
-            size="sm"
-          >
-            Masuk
-          </Button>
-          <Button
-            onClick={() => router.push("/auth/register")}
-            className="px-6"
-            size="sm"
-            variant="outline"
-          >
-            Daftar
-          </Button>
-        </div>
+      <div className="hidden md:flex tems-center gap-4">
+        <ButtonReusable
+          path="auth/login"
+          title="Masuk"
+          className="px-6"
+          size="sm"
+        />
+        <ButtonReusable
+          path="auth/register"
+          title="Daftar"
+          className="px-6"
+          size="sm"
+          variant="outline"
+        />
       </div>
     </>
   );

@@ -8,6 +8,7 @@ import ArticleExcerpt from "@/components/beranda/articleExcerpt/ArticleExcerpt";
 const Home = () => {
   return (
     <>
+    <div className="my-24">
       <section>
         <Pendahuluan />
         <TentangKami />
@@ -20,6 +21,7 @@ const Home = () => {
         <PhotoCarousel />
         <ArticleExcerpt />
       </section>
+    </div>
     </>
   );
 };

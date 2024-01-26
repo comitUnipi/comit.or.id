@@ -8,7 +8,7 @@ import { Label } from "@radix-ui/react-label";
 const FormRegister = () => {
   return (
     <div className="container mx-auto max-w-4xl">
-      <div className="flex justify-between border border-black shadow-xl rounded-lg">
+      <div className="flex justify-between shadow-lg rounded-lg">
         <div className="p-4 mx-5 w-full">
           <h1 className="text-4xl mt-5 font-bold text-center">Daftar</h1>
           <form>
@@ -46,9 +46,9 @@ const FormRegister = () => {
             />
           </form>
         </div>
-        <div className="hidden lg:block bg-primary border-l border-black rounded-r-md shadow-lg lg:w-[77%]">
+        <div className="hidden lg:block bg-primary rounded-r-md shadow-lg lg:w-[77%]">
           <Image
-            className="lg:mt-[10rem] lg:ml-[37px]"
+            className="lg:mt-[10rem] lg:ml-[38px]"
             src="/images/sayHello.png"
             alt="..."
             width={300}

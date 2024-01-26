@@ -12,7 +12,7 @@ const Layout = (props) => {
   return (
     <>
       {!disable.includes(pathname) && <Navbar />}
-      <div className="my-24">{children}</div>
+      <div>{children}</div>
       {!disable.includes(pathname) && <Footer />}
     </>
   );
