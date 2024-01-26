@@ -21,17 +21,17 @@ const ArticleExcerpt = () => {
               tag={konten.topik}
               excerpt={konten.subJudul}
               featuredImage={konten.img}
-            />
-          ) : (
-            <Excerpt
-              key={index}
-              title={konten.judul}
-              createdAt={konten.tanggal}
-              tag={konten.topik}
-              excerpt={konten.subJudul}
-              featuredImage={konten.img}
-              rowStart="lg:row-start-1"
-            />
+              />
+              ) : (
+                <Excerpt
+                key={index}
+                title={konten.judul}
+                createdAt={konten.tanggal}
+                tag={konten.topik}
+                excerpt={konten.subJudul}
+                featuredImage={konten.img}
+                rowStart="lg:row-start-1"
+                />
           );
         })}
       </div>
